@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+body,input,textarea,select {
+	font-size: 8pt;
+}
+
+#banner {
+	padding: 7em 0em 7em 0em;
+}
+	
+#banner header h2 {
+	font-size: 2.5em;
+}
+	
+#banner header .byline {
+	padding-top: 1em;
+	font-size: 1.8em;
+	font-weight: 500;
+}
+
+#main {
+	padding: 7em 0em;
+}	
+	
+.sidebar header h2 {
+	font-size: 1.8em;
+}
+
+#extra {
+	padding: 7em 0em;
+}
+	
+#featured {
+	padding: 6em 0em;
+}
+
+#footer {
+	padding: 7em 0em;
+}

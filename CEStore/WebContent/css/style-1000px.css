@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+body {
+	width:100%;
+}
+	
+body,input,textarea,select {
+	font-size: 11pt;
+}
+
+ul {
+	font-size: 10pt;
+}
+
+input#ricerca {
+	width: 250px;
+}	
+
+#header .container {
+	position: relative;
+	padding: 3em 0em;
+	z-index: 1; /* settato per far vedere div login*/
+}
+
+#banner {
+	padding: 7em 0em 7em 0em;
+}
+	
+#banner header h2 {
+	font-size: 2.5em;
+}
+	
+#banner header .byline {
+	padding-top: 1em;
+	font-size: 1.8em;
+	font-weight: 500;
+}
+
+/* Logo */
+#logo img {
+	height: 60px;
+	width: 150px;
+}
+	
+#logo {
+	position: absolute;
+	float: left;
+	left: 0em;
+	top: 1.7em;
+}
+
+#nav > ul > li:last-child { padding-right: 0; }
+
+#nav > li#search {
+	width: 40%;
+}
+
+/* Nav */
+#nav {
+	position: absolute;
+	right: 0em;
+	top: 1.1em;
+}
+
+#main {
+	padding: 7em 0em;
+}	
+	
+.sidebar header h2 {
+	font-size: 1.8em;
+}
+
+#extra {
+	padding: 7em 0em;
+}
+	
+#featured {
+	padding: 6em 0em;
+}
+
+#footer {
+	padding: 7em 0em;
+}

@@ -1,0 +1,235 @@
+@charset "UTF-8";
+
+body,input,textarea,select {
+	line-height: 1.75em;
+	font-size: 10.5pt;
+	letter-spacing: 0;
+}
+
+body {
+	padding-top: 44px;
+}
+
+h2, h3, h4, h5, h6 {
+	font-size: 1.5em;
+}
+
+header > ul {
+	font-size: 9pt;
+}
+
+ul {
+	font-size: 11pt;
+}
+
+section {
+	display: inline-block;
+}
+	
+header h2 {
+	font-size: 1.8em;
+}
+
+header .byline {
+	font-size: 1.2em;
+}
+	
+.container {
+	padding: 0em 1em;
+}
+	
+.button {
+ 	display: block;
+	width: 100%;
+	text-align: center;
+	font-size: 1em;
+}
+	
+.medium {
+	font-size: 1em;
+}
+	
+#header .container {
+	padding: 0;
+}
+
+/* responsive barra navigazionale superiore comune a tutte le pagine */
+#nav {
+	display:none;
+}
+
+#nav {
+	width:180px;	
+	position: fixed;
+   	top: 0; 
+   	bottom: 0;
+   	margin: 20;
+    color: #252525;
+    overflow-y: scroll;
+    background:rgba(255,255,255);
+}
+
+/* Header */
+#logo a {
+	font-size:25px;
+	margin-left:10px;
+}
+
+/* Button Responsive Menu */
+.btn-responsive-menu {
+	float: right;
+	padding:5px;
+	cursor:pointer;
+	margin: 0px 20px 0 0;
+	color: #252525;
+	text-shadow: 0 -1px 0 #252525;
+	background:#252525;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	z-index: 10;
+}
+
+.icon-bar {
+	display: block;
+	width: 18px;
+	height: 2px;
+	margin:5px;
+	background-color: rgba(255,255,255,.2);
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+	-webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+}
+/* /Button Responsive Menu */
+
+.btn-responsive-menu {
+	display: block;
+}	
+/* /responsive barra navigazionale superiore comune a tutte le pagine */
+
+#grid { width: 90%; }
+	
+/* responsive barra per la ricerca dei capi */
+
+#totalSidebar {
+	hidden: false;
+	position: relative;
+    color: #252525;
+    overflow-y: visible;
+    background:rgba(255,255,255);
+    width: 10%;
+}
+
+#nav > input#ricerca {
+	width: 10%;
+}
+
+/* Button Responsive Menu */
+.btn-responsive-menu2 {
+	width: 38px;
+	float: left;
+	padding:5px;
+	cursor:pointer;
+	margin: 0px 0px 0 0;
+	color: #252525;
+	text-shadow: 0 -1px 0 #252525;
+	background:#252525;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	z-index: 10;
+}
+/* /Button Responsive Menu */
+
+.btn-responsive-menu2 {
+	display: block;
+}	
+
+input#ricerca {
+	width: 150px;
+}
+
+#nav > ul#capi {
+	display:none;
+}
+
+#nav > ul#capi {
+	width:180px;	
+   	top: 0; 
+   	bottom: 0;
+   	margin: 20;
+    color: #252525;
+    overflow-y: scroll;
+    background:rgba(255,255,255);
+}
+/* /responsive barra per la ricerca dei capi */
+
+.capo > img {
+	width:350px;
+	height:100%;
+}
+
+#img_fronte {
+	width: 150px;
+	height: 180px;
+	display: inline;
+}
+	
+#img_retro {
+	width: 150px;
+	height: 180px;
+	display: inline;
+}
+
+#img_lato {
+	width: 150px;
+	height: 180px;
+	display: inline;
+}
+
+#imgCart {
+	width: 120px;
+	height: 160px;
+}
+
+#img_ordine {
+	width: 200px;
+	height: 300px;
+}
+
+.row {
+	display: inline;
+}
+
+#banner {
+	padding: 4em 0em 3em 0em;
+}
+
+#banner header .byline {
+	padding-top: 1em;
+	font-size: 1.2em;
+	font-weight: 500;
+}
+	
+#banner .fa:before {
+	font-size: 3em;
+}
+
+#main {
+	padding: 2em 0em;
+}
+
+#extra {
+	padding: 4em 0em 3em 0em;
+}
+	
+#featured {
+	padding: 4em 0em 3em 0em;
+}
+	
+#footer {
+	padding: 4em 0em 3em 0em;
+}	

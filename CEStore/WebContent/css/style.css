@@ -1,0 +1,420 @@
+@charset 'UTF-8';
+
+@font-face{
+	font-family:'FontAwesome';
+	src:url('font/fontawesome-webfont.eot?v=4.0.1');
+	src:url('font/fontawesome-webfont.eot?#iefix&v=4.0.1') format('embedded-opentype'),url('font/fontawesome-webfont.woff?v=4.0.1') format('woff'),url('font/fontawesome-webfont.ttf?v=4.0.1') format('truetype'),url('font/fontawesome-webfont.svg?v=4.0.1#fontawesomeregular') format('svg');
+	font-weight:normal;
+	font-style:normal;
+}
+
+body {
+	background: #111111 url(images/wrapperBackground.jpg) repeat;
+}
+
+body,input,textarea,select {
+	font-family: 'Raleway', sans-serif;
+	font-size: 13pt;
+	font-weight: 300;
+	line-height: 1.75em;
+	color: #818082;
+}
+
+h1,h2,h3,h4,h5,h6 { font-weight: bold; }
+
+h2 {
+	font-size:3.8em;
+}	
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	color: inherit;
+	text-decoration: none;
+}	
+	
+strong, b {
+	font-weight: bold;
+	color: #000000;
+}
+	
+em, i { font-style: italic; }
+
+a {
+	text-decoration: none;
+	color: #ea9c74;
+}
+	
+a:hover { 
+	text-decoration: underline; 
+}
+
+a:active {
+	text-decoration: underline;
+	color: #ea9c74;
+}
+
+sub {
+	position: relative;
+	top: 0.5em;
+	font-size: 0.8em;
+}
+	
+sup {
+	position: relative;
+	top: -0.5em;
+	font-size: 0.8em;
+}
+	
+hr {
+	border: 0;
+	border-top: solid 1px #ddd;
+} 
+	
+p, ul, ol, dl, table { margin-bottom: 1em; }
+
+header { margin-bottom: 2em; }
+	
+header h2 { font-size: 2.8em; }
+
+header .byline {
+	display: block;
+	margin: 0.5em 0 0 0;
+	padding: 0.50em 0 0.5em 0;
+	text-transform: uppercase;
+	font-size: 1.4em;
+}
+		
+footer { margin-top: 1em; }
+
+br.clear { clear: both; }
+
+/* Sections/Articles */
+section,article { margin-bottom: 3em; }
+		
+section > :last-child,article > :last-child { margin-bottom: 0; }
+
+section:last-child,article:last-child { margin-bottom: 0; }
+
+.row > section,.row > article { margin-bottom: 0; }
+
+/* Images */
+/* per visualizzare le immagini affiancate e con i giusti spazi di separazione del div MAIN */
+.image { display: inline-block; }
+		
+.image img {
+	display: block;
+	width: 100%;
+}
+
+.image.featured {
+	display: block;
+	width: 100%;
+	margin: 0 0 2em 0;
+}
+			
+.image.full {
+	display: block;
+	width: 100%;
+	margin-bottom: 2em;
+}
+			
+.image.left {
+	float: left;
+	margin: 0 2em 2em 0;
+}
+			
+.image.centered {
+	display: block;
+	margin: 0 0 2em 0;
+}
+
+.image.centered img {
+	margin: 0 auto;
+	width: auto;
+}
+
+/* Lists */
+ul.default {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+		
+ul.default li {
+	padding: 0.80em 0em;
+	border-top: 1px solid;
+	border-color: rgba(255,255,255,.2);
+}
+			
+ul.default a { color: rgba(255,255,255,.6); }
+
+/* Buttons */	
+.button {
+	position: relative;
+	display: inline-block;
+	margin-top: 0.5em;
+	padding: 1em 1.5em;
+	background: #ea9c74;
+	border-radius: 6px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1.1em;
+	color: #FFF;
+	-moz-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+	-webkit-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+	-o-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+	-ms-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+	transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+	cursor: pointer;
+}
+
+.button:hover {
+	background: #aed1a8;
+	color: #FFF !important;
+}
+			
+.medium {
+	padding: 1em 2em;
+	font-size: 1.4em;
+}
+
+/* Header */
+#header-wrapper {
+	padding: 0em;
+	background: #333 url(../images/homepage2.jpg) no-repeat center;
+	background-size: cover;
+}
+
+#header {
+	position: relative;
+	background: #FFF;
+}
+	
+#header .container {
+	position: relative;
+	padding: 3em 0em;
+	z-index: 1; /* settato per far vedere div login*/
+}
+
+/* Logo */
+#logo img {
+	max-height: 60px;
+	max-width: 200px;
+}
+	
+#logo {
+	position: absolute;
+	float: left;
+	left: 0em;
+	top: 1.7em;
+}
+
+/* Nav */
+#nav {
+	position: absolute;
+	right: 0em;
+	top: 1.1em;
+}
+
+#nav > ul > li { float: left; }
+	
+#nav > ul > li:last-child { padding-right: 0; }
+
+#nav > ul > li > a {
+	display: block;
+	margin-left: 0.7em;
+	padding: 0.80em 1.2em;
+	letter-spacing: 0.06em;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1.1em;
+	outline: 0;
+	color: #252525;
+}
+
+#nav li.active a {
+	background: #ea9c74;
+	border-radius: 5px;
+	color: #FFF;
+}
+
+#nav > ul > li > ul { display: none; }
+
+/* per la barra di ricerca orizzontale*/
+#nav > ul > li > div { 
+	display: none; 
+	height:300px;
+	overflow:auto;	
+	background-color: rgba(255,255,255); 
+}
+
+#nav li.active a {
+	background: #ea9c74;
+	border-radius: 5px;
+	color: #FFF;
+}
+
+/* barra di ricerca */
+#nav > ul > li > ul { display: none; }
+
+#nav img#imgSearch {
+	height: 25px;
+	width: 25px;
+}
+
+#nav > li#search {
+	position: absolute;
+	bottom: 0;
+	right: 35px;
+	height: 138px;
+	line-height: 120px;
+}
+/* /barra di ricerca */
+
+/* form per il login */
+#nav #loginForm {
+	background-color: #fff;
+	display: none;
+	float: right;
+	border: 1px solid #ea9c74;
+	padding: 10px;
+	z-index: 3;
+}
+/* /form per il login */
+
+/* Banner */
+#banner {
+	position: relative;
+	text-align: center;
+	color: #fff;
+}
+
+/* main */
+#main {
+	position: relative;
+	background: #fff;
+}
+	
+.homepage #main header,.homepage #main { text-align: center; }
+ 		
+#main .left { text-align: left; }
+		
+#main .right { text-align: right; }
+		
+#main .button {
+	display: inline-block;
+	margin-top: 4em;
+}
+		
+#main .divider {
+	margin-top: 4em;
+	border-bottom: 1px solid rgba(0,0,0,.2);
+}
+		
+.sidebar .default a { color: #333; }
+
+/* VisualizzazioneCapi */
+.row {
+	display: inline-block;
+}
+
+/* per impostare le dimensioni delle componenti totalSidebar e grid all'interno della pagina */
+#totalSidebar { width: 15%; }
+
+#grid { width: 85%; }
+
+div.visualCapi {
+	width: 30%;
+	height: 80%;
+	float:right;
+	padding: 2%;
+}
+
+.content .foto {
+	height: 90%;
+}
+
+.content .description {
+	float:center;
+	height: 10%;
+	background-color: rgba(255,255,255,.2); /* colore sfondo pagina */
+}
+
+/* per visualizzazioneCapo.jsp: visualizza l'immagine del capo e i dati allineati orizzontalmente */
+div.capo {
+	float:left;
+	margin-left: 20px;
+}
+
+div.insertEdelete {
+	float: left;
+	margin-left: 15px;
+}
+
+/* Extra */
+#extra
+{
+	position: relative;
+	background: #f5f5f5;
+	text-align: center;
+}
+	
+#extra header h2
+{
+	text-transform: uppercase;
+	font-size: 1.6em;
+}
+	
+#extra .fa:before
+{
+	margin-bottom: 1em;
+	width: 2em;
+	height: 2em;
+	line-height: 2em;
+	font-size: 3em;
+	border-radius: 50%;
+	border: 2px solid;
+	border-color: rgba(0,0,0,.8);
+	color: rgba(0,0,0,.8);
+}
+		
+#extra .button
+{
+	margin-top: 4em;
+}
+
+/* Footer*/
+#footer
+{
+	position: relative;
+	background: url(images/footer-content-wrapper-bg.jpg) repeat;
+	color: rgba(255,255,255,.6);
+}
+	
+#footer header h2
+{
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 1.4em;
+	color: #FFF;
+}
+
+/* Form */
+.form {
+	text-align: center;
+	margin: auto;
+}
+	
+/* Copyright */
+#copyright
+{
+	position: relative;
+	padding: 3em 0em;
+	text-align: center;
+	color: rgba(255,255,255,.4);
+}
+	
+#copyright a
+{
+	text-decoration: none;
+	color: rgba(255,255,255,.6);
+}			
